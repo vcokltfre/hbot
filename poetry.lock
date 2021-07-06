@@ -67,6 +67,18 @@ python-versions = ">=3.8,<4.0"
 aiohttp = ">=3.7.4,<4.0.0"
 
 [[package]]
+name = "corded-logger"
+version = "1.0.0"
+description = "A Discord webhook logger for Corded"
+category = "main"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[package.dependencies]
+corded = ">=1.3.8,<2.0.0"
+loguru = ">=0.5.3,<0.6.0"
+
+[[package]]
 name = "idna"
 version = "3.2"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -183,7 +195,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "006bce20c77800cbbf1c20ee0896c219b6854cef78c37c4992b7c403fcfd9d6a"
+content-hash = "1d1de0df921a9adc1941d854ada2cbf861569b04693fd8064ecf47b32babecb9"
 
 [metadata.files]
 aiohttp = [
@@ -244,6 +256,10 @@ colorama = [
 corded = [
     {file = "corded-1.3.8-py3-none-any.whl", hash = "sha256:95501f870d15812cd9aa0f2ec2e4cd1c402184021af67aeab38debc1a52bb94c"},
     {file = "corded-1.3.8.tar.gz", hash = "sha256:a1a1ab521106f90fe672857dbfcc679e175ae3e7f2696acabbf2cfc9fd82beb8"},
+]
+corded-logger = [
+    {file = "corded-logger-1.0.0.tar.gz", hash = "sha256:6978f5c3a2b31da27238d99185c538f3f5600ef540d7483f8500fd5b6f36b837"},
+    {file = "corded_logger-1.0.0-py3-none-any.whl", hash = "sha256:66b51acb964719ee3823f54801b1233368d502ebcd904f456855dd208cdb5071"},
 ]
 idna = [
     {file = "idna-3.2-py3-none-any.whl", hash = "sha256:14475042e284991034cb48e06f6851428fb14c4dc953acd9be9a5e95c7b6dd7a"},

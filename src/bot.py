@@ -2,13 +2,18 @@ from asyncio import Event
 from os import getenv
 
 from corded import CordedClient, GatewayEvent, Intents, Route
-from loguru import logger
+from corded.logging import get_logger, set_hook, set_client
 
 
 bot = CordedClient(token=getenv("TOKEN"), intents=Intents.default(), shard_count=1, shard_ids=[0])
 allow = [int(c) for c in getenv("EXCLUDE_CHANNELS").split(";")]
 guild = int(getenv("MAIN_GUILD"))
 channels = {}
+
+set_client(bot)
+set_hook(getenv("LOGGING_HOOK"))
+
+logger = get_logger()
 
 ready = Event()
 ready.clear()
@@ -31,7 +36,7 @@ async def on_ready(_event: GatewayEvent) -> None:
 
 @bot.on("guild_create")
 async def on_guild_create(event: GatewayEvent) -> None:
-    logger.info("Received guild data for " + str(event.typed_data["id"]))
+    logger.debug("Received guild data for " + str(event.typed_data["id"]))
 
     if ready.is_set():
         return
