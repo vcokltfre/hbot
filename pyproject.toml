@@ -6,7 +6,7 @@ authors = ["vcokltfre <vcokltfre@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-corded = "^1.3.7"
+corded = "^1.3.8"
 python-dotenv = "^0.18.0"
 loguru = "^0.5.3"
 taskipy = "^1.8.1"
