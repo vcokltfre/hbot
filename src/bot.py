@@ -34,6 +34,10 @@ async def filter(event: GatewayEvent) -> GatewayEvent:
 async def on_ready(_event: GatewayEvent) -> None:
     logger.info("Bot is ready!")
 
+@bot.on("op_2", "op_6")
+async def on_connect(event: GatewayEvent) -> None:
+    logger.info(f"Payload: {'identify' if event.op == 2 else 'resume'}")
+
 @bot.on("guild_create")
 async def on_guild_create(event: GatewayEvent) -> None:
     logger.debug("Received guild data for " + str(event.typed_data["id"]))
