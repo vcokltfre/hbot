@@ -57,7 +57,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "corded"
-version = "1.4.0"
+version = "1.4.2"
 description = "A lightweight, extensible client library for Discord bots"
 category = "main"
 optional = false
@@ -195,7 +195,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "1d1de0df921a9adc1941d854ada2cbf861569b04693fd8064ecf47b32babecb9"
+content-hash = "2add7e0d14492f56f9a231c76b4bfec33d507aa610cfe1d0d455860cccc7451b"
 
 [metadata.files]
 aiohttp = [
@@ -254,8 +254,8 @@ colorama = [
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
 corded = [
-    {file = "corded-1.4.0-py3-none-any.whl", hash = "sha256:d23eb09866b62e76aa0fa14b71b7ef6e247295119dccf52499d6e2c92bd16db0"},
-    {file = "corded-1.4.0.tar.gz", hash = "sha256:cb517b6c187e5c68149a2bf40cd9d1396f1e285387708d1d4a4e0cd6958dbe8c"},
+    {file = "corded-1.4.2-py3-none-any.whl", hash = "sha256:c951da15df49d1aa3a7319f6c3e8262db9c34ee9565dba9b032b721803e62f50"},
+    {file = "corded-1.4.2.tar.gz", hash = "sha256:17aed5e157e77ebf1ab9cc4ab63457be8ae684bcff34b71ac5856c49312c9265"},
 ]
 corded-logger = [
     {file = "corded-logger-1.0.0.tar.gz", hash = "sha256:6978f5c3a2b31da27238d99185c538f3f5600ef540d7483f8500fd5b6f36b837"},
